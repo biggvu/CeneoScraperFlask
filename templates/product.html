@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 40px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Details for {{ product_code }}</h1>
+        <h2>Statistics:</h2>
+        <ul>
+            <li>Opinions Count: {{ stats.opinions_count }}</li>
+            <li>Pros Count: {{ stats.pros_count }}</li>
+            <li>Cons Count: {{ stats.cons_count }}</li>
+            <li>Average Score: {{ stats.average_score }}</li>
+        </ul>
+    </div>
+</body>
+</html>

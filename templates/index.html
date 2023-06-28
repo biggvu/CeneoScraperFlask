@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Codes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Available Product Codes:</h1>
+    <ul>
+        {% for product_code in product_codes %}
+            <li><a href="/product/{{ product_code }}">{{ product_code }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
